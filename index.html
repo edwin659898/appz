@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        .grid-item {
+            animation: fadeIn 1s ease;
+        }
+
+        .card-header {
+            background: linear-gradient(to right, #3182ce, #6baed6);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Landing Page</title>
+</head>
+
+<body class="bg-gray-100 h-screen">
+    <header>
+        <nav
+            class="navbar navbar-expand-md p-2 bg-gradient-to-r from-blue-600 via-green-300 to-green-600 shadow-sm mb-4">
+            <main class="container mx-auto px-3 py-1.5 flex flex-row items-center justify-between lg:border-none">
+                <!-- logo -->
+                <div class="flex items-center justify-center nav_logo space-x-2">
+                    <img src="https://car.betterglobeforestry.co.ke/storage/logo.png" class="h-10" alt="" />
+                    <h2 class="text-xl text-white uppercase font-semibold tracking-widest">BGF Internal Applications</h2>
+                </div>
+
+                <!-- store locator btn -->
+                <div class="lg:block hidden store_locator">
+                    <button class="focus:outline-none text-white text-sm capitalize flex items-center">
+                        Home <svg class="w-4 h-4 text-white ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </button>
+                </div>
+            </main>
+
+        </nav>
+    </header>
+
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/moni.png" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">CAR App</h5>
+                            <a href="https://car.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/sugg.jpg" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Comms App</h5>
+                            <a href="https://suggestions-box.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3">
+                        <div>
+                            <img src="https://cdn.corporatefinanceinstitute.com/assets/source-documents-1024x682.jpeg"
+                                alt="ps5-controller" class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Docs Control</h5>
+                            <a href="https://documentcontrol.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/emp.png" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Employee Portal</h5>
+                            <a href="https://eportal.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/buy.png" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">IPR App</h5>
+                            <a href="https://ipr.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/forest.jpg" alt="ps5-controller"
+                                class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">JobCard DKL</h5>
+                            <a href="#" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3">
+                        <div>
+                            <img src="./img/forest.jpg" alt="ps5-controller"
+                                class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">JobCard Mukau</h5>
+                            <a href="http://jobcard.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/bull.jpg" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Maintainance App
+                            </h5>
+                            <a href="https://maintainance-apps.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/sur.png" alt="ps5-controller" class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Meetings App</h5>
+                            <a href="https://meetings.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/sur.png" alt="ps5-controller" class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Messaging App</h5>
+                            <a href="https://messaging.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3">
+                        <div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsDyCy1UETSBRvKJQHUMB_a9MP1ZsQ2pxArQ&usqp=CAU"
+                                alt="ps5-controller" class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Miti Magazine</h5>
+                            <a href="https://miti-magazine.betterglobeforestry.com" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3">
+                        <div>
+                            <img src="./img/occ-book.png" alt="ps5-controller"
+                                class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Occ Book</h5>
+                            <a href="http://occurence.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/emp.png" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">P Evaluation App
+                            </h5>
+                            <a href="https://evaluation.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/all.jpg" alt="ps5-controller" class="w-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Ticketing App
+                            </h5>
+                            <a href="https://ticketing.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/4 p-8 grid-item">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <main class="flex space-x-3 pb-3">
+                        <div>
+                            <img src="./img/emp.png" alt="ps5-controller" class="w-16 h-16 rounded-full object-cover">
+                        </div>
+                        <div class="flex flex-col">
+                            <h5 class="text-green-500 text-md tracking-wider font-semibold">Training App</h5>
+                            <a href="https://trainings.betterglobeforestry.co.ke" target="_blank"
+                                class="text-sm text-blue-700 tracking-wider border-b-2 border-gray-300 w-max">Visit
+                                Now</a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
